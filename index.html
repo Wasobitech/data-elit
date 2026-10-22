@@ -20,16 +20,16 @@
                     <i class="bi bi-list fs-3"></i>
                 </button>
                 <a class="navbar-brand text-brand fs-4 fw-bold ms-lg-0" href="#beranda">DATAELITE</a>
-                <div class="d-flex align-items-center ms-auto">
+                <div class="d-flex align-items-center ms-auto gap-1">
                     <button class="btn btn-red-filled btn-sm d-none d-md-block px-3 py-1-5 text-uppercase fw-semibold" type="button">Profesional Global</button>
-                    <button class="btn btn-icon text-muted ms-3 d-none d-md-block" title="Ubah Bahasa">
+                    <button class="btn btn-icon text-muted" title="Ubah Bahasa" id="btn-globe">
                         <i class="bi bi-globe fs-5"></i>
                     </button>
-                    <button class="btn btn-icon text-muted ms-3" title="Notifikasi">
+                    <button class="btn btn-icon text-muted" title="Notifikasi" id="btn-notification">
                         <i class="bi bi-bell-fill fs-5"></i>
                     </button>
-                    <img src="https://via.placeholder.com/32" class="rounded-circle profile-pic ms-3" alt="Profil">
-                    <button class="btn btn-icon text-muted ms-1" title="Menu Akun">
+                    <img src="https://via.placeholder.com/32" class="rounded-circle profile-pic ms-2" alt="Profil">
+                    <button class="btn btn-icon text-muted ms-1" title="Menu Akun" id="btn-profile">
                         <i class="bi bi-chevron-down fs-7"></i>
                     </button>
                 </div>
@@ -42,8 +42,10 @@
             <!-- SIDEBAR -->
             <aside id="sidebar" class="sidebar bg-white border-end shadow">
                 <div class="p-3">
-                    <button class="btn-close d-lg-none" id="sidebar-close" aria-label="Tutup Menu"></button>
-                    <nav class="nav-sidebar flex-column">
+                    <button class="btn-close d-lg-none" id="sidebar-close" aria-label="Tutup Menu">
+                        <i class="bi bi-x fs-4"></i>
+                    </button>
+                    <nav class="nav-sidebar flex-column mt-3">
                         <a class="nav-link nav-item-styled active" href="#beranda">
                             <i class="bi bi-house-door-fill nav-icon"></i>Beranda
                         </a>
@@ -67,8 +69,8 @@
             <main id="main-content" class="main-content bg-light flex-grow-1">
                 <div class="container-fluid content-scroller p-3 p-md-4">
                     
-                    <!-- HERO SECTION / BERANDA -->
-                    <section id="beranda" class="content-section py-4">
+                    <!-- HERO SECTION / BERANDA (DEFAULT VIEW) -->
+                    <section id="beranda" class="content-section py-4 show">
                         <div class="row align-items-center">
                             <div class="col-md-8">
                                 <h1 class="display-6 fw-bold mb-3">Selamat Datang di DATAELITE</h1>
@@ -80,8 +82,8 @@
 
                     <!-- ORGANISASI FOLDER DATA AHLI -->
                     <section id="analisis-data" class="content-section py-4">
-                        <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
-                            <h2 class="h3 fw-bold">Organisasi Folder Data Ahli</h2>
+                        <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+                            <h2 class="h3 fw-bold m-0">Organisasi Folder Data Ahli</h2>
                             <div class="d-flex align-items-center gap-2 flex-wrap">
                                 <button class="btn btn-outline-brand btn-sm" type="button"><i class="bi bi-plus-circle me-1"></i>Folder Baru</button>
                                 <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-file-earmark-plus me-1"></i>File Baru</button>
@@ -90,7 +92,7 @@
                             </div>
                         </div>
 
-                        <!-- Data Table Mockup (Revisi) -->
+                        <!-- Data Table Mockup -->
                         <div class="data-table border rounded bg-white shadow-sm overflow-hidden">
                             <div class="table-header d-flex text-muted fw-semibold p-3 border-bottom bg-light">
                                 <div class="w-40 px-1">Nama <i class="bi bi-arrow-up"></i></div>
@@ -134,18 +136,18 @@
                         </div>
                     </section>
 
-                    <!-- Placeholders for other sections -->
+                    <!-- PLACEHOLDERS for other sections (SPA) -->
                     <section id="proyek" class="content-section py-4" style="min-height: 400px;">
                         <h2 class="h3 fw-bold">Daftar Proyek</h2>
-                        <p class="text-muted">Konten proyek Anda akan muncul di sini.</p>
+                        <p class="text-muted lead">Konten proyek Anda akan muncul di sini.</p>
                     </section>
                     <section id="laporan" class="content-section py-4" style="min-height: 400px;">
                         <h2 class="h3 fw-bold">Daftar Laporan</h2>
-                        <p class="text-muted">Konten laporan Anda akan muncul di sini.</p>
+                        <p class="text-muted lead">Konten laporan Anda akan muncul di sini.</p>
                     </section>
                     <section id="pengaturan" class="content-section py-4" style="min-height: 400px;">
                         <h2 class="h3 fw-bold">Pengaturan Aplikasi</h2>
-                        <p class="text-muted">Konfigurasi akun dan aplikasi di sini.</p>
+                        <p class="text-muted lead">Konfigurasi akun dan aplikasi di sini.</p>
                     </section>
 
                 </div>
@@ -165,7 +167,7 @@
                 <button class="btn btn-red-filled btn-large-center" type="button" title="Buat Baru">
                     <i class="bi bi-plus fs-2 text-white"></i>
                 </button>
-                <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#Favorites">
+                <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#Favorit">
                     <i class="bi bi-heart bottom-nav-icon"></i>Favorit
                 </a>
                 <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#Profil">
@@ -177,6 +179,6 @@
     </div>
 
     <!-- Vanilla JS Code -->
-    <script src="script.js"></script>
+    <script src="script.js?v=1.1"></script>
 </body>
 </html>
