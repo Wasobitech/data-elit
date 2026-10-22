@@ -16,16 +16,22 @@
         <!-- HEADER -->
         <header id="header" class="header sticky-top bg-white border-bottom shadow-sm">
             <nav class="navbar navbar-expand-lg navbar-light container-fluid px-3 h-100">
-                <button class="btn btn-icon d-lg-none" id="sidebar-toggle" aria-label="Buka Menu">
+                <button class="btn btn-icon d-lg-none me-2" id="sidebar-toggle" aria-label="Buka Menu">
                     <i class="bi bi-list fs-3"></i>
                 </button>
-                <a class="navbar-brand text-brand fs-4 fw-bold ms-2 ms-lg-0" href="#beranda">DATAELITE</a>
+                <a class="navbar-brand text-brand fs-4 fw-bold ms-lg-0" href="#beranda">DATAELITE</a>
                 <div class="d-flex align-items-center ms-auto">
                     <button class="btn btn-red-filled btn-sm d-none d-md-block px-3 py-1-5 text-uppercase fw-semibold" type="button">Profesional Global</button>
-                    <i class="bi bi-globe fs-5 text-muted ms-3 d-none d-md-block" title="Ubah Bahasa"></i>
-                    <i class="bi bi-bell-fill fs-5 text-muted ms-3" title="Notifikasi"></i>
+                    <button class="btn btn-icon text-muted ms-3 d-none d-md-block" title="Ubah Bahasa">
+                        <i class="bi bi-globe fs-5"></i>
+                    </button>
+                    <button class="btn btn-icon text-muted ms-3" title="Notifikasi">
+                        <i class="bi bi-bell-fill fs-5"></i>
+                    </button>
                     <img src="https://via.placeholder.com/32" class="rounded-circle profile-pic ms-3" alt="Profil">
-                    <i class="bi bi-chevron-down fs-7 text-muted ms-1" title="Menu Akun"></i>
+                    <button class="btn btn-icon text-muted ms-1" title="Menu Akun">
+                        <i class="bi bi-chevron-down fs-7"></i>
+                    </button>
                 </div>
             </nav>
         </header>
@@ -58,8 +64,8 @@
             </aside>
 
             <!-- MAIN CONTENT AREA -->
-            <main id="main-content" class="main-content bg-light flex-grow-1 p-3 p-md-4">
-                <div class="container-fluid content-scroller">
+            <main id="main-content" class="main-content bg-light flex-grow-1">
+                <div class="container-fluid content-scroller p-3 p-md-4">
                     
                     <!-- HERO SECTION / BERANDA -->
                     <section id="beranda" class="content-section py-4">
@@ -74,53 +80,53 @@
 
                     <!-- ORGANISASI FOLDER DATA AHLI -->
                     <section id="analisis-data" class="content-section py-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                        <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
                             <h2 class="h3 fw-bold">Organisasi Folder Data Ahli</h2>
                             <div class="d-flex align-items-center gap-2 flex-wrap">
-                                <button class="btn btn-outline-brand btn-sm" type="button"><i class="bi bi-plus-circle me-1"></i>Folder Folder</button>
-                                <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-file-earmark-plus me-1"></i>File File</button>
-                                <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-star me-1"></i>Fitur Fitur</button>
+                                <button class="btn btn-outline-brand btn-sm" type="button"><i class="bi bi-plus-circle me-1"></i>Folder Baru</button>
+                                <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-file-earmark-plus me-1"></i>File Baru</button>
+                                <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-star me-1"></i>Fitur</button>
                                 <button class="btn btn-outline-secondary btn-sm" type="button"><i class="bi bi-download me-1"></i>Download</button>
                             </div>
                         </div>
 
-                        <!-- Data Table Mockup -->
+                        <!-- Data Table Mockup (Revisi) -->
                         <div class="data-table border rounded bg-white shadow-sm overflow-hidden">
-                            <div class="table-header d-flex text-muted fw-semibold p-2 border-bottom">
-                                <div class="w-35 px-1">Nama <i class="bi bi-arrow-up"></i></div>
-                                <div class="w-25 px-1">Format</div>
-                                <div class="w-20 px-1">Teslah</div>
+                            <div class="table-header d-flex text-muted fw-semibold p-3 border-bottom bg-light">
+                                <div class="w-40 px-1">Nama <i class="bi bi-arrow-up"></i></div>
+                                <div class="w-20 px-1">Format</div>
+                                <div class="w-20 px-1">Terakhir Diubah</div>
                                 <div class="w-20 px-1 text-center">Aksi</div>
                             </div>
                             <!-- Rows -->
                             <div class="table-body">
-                                <div class="table-row d-flex align-items-center p-2 border-bottom">
-                                    <div class="w-35 d-flex align-items-center"><i class="bi bi-folder-fill me-2 fs-5 text-brand"></i> Analisis Data</div>
-                                    <div class="w-25 text-muted">Folder</div>
+                                <div class="table-row d-flex align-items-center p-3 border-bottom">
+                                    <div class="w-40 d-flex align-items-center"><i class="bi bi-folder-fill me-2 fs-5 text-brand"></i>Analisis Data</div>
+                                    <div class="w-20 text-muted">Folder</div>
                                     <div class="w-20 text-muted">--</div>
                                     <div class="w-20 text-center text-muted"><i class="bi bi-three-dots"></i></div>
                                 </div>
-                                <div class="table-row d-flex align-items-center p-2 border-bottom ps-4">
-                                    <div class="w-35 d-flex align-items-center"><i class="bi bi-folder-fill me-2 fs-5 text-brand"></i> Proyek</div>
-                                    <div class="w-25 text-muted">Develop Folder</div>
+                                <div class="table-row d-flex align-items-center p-3 border-bottom ps-4-5">
+                                    <div class="w-40 d-flex align-items-center"><i class="bi bi-folder-fill me-2 fs-5 text-brand"></i>Proyek</div>
+                                    <div class="w-20 text-muted">Folder</div>
                                     <div class="w-20 text-muted">21.03.2023</div>
                                     <div class="w-20 text-center text-muted"><i class="bi bi-three-dots"></i></div>
                                 </div>
-                                <div class="table-row d-flex align-items-center p-2 border-bottom ps-5">
-                                    <div class="w-35 d-flex align-items-center"><i class="bi bi-file-earmark-text-fill me-2 fs-5 text-muted"></i> Analisis Data</div>
-                                    <div class="w-25 text-muted">Documentation</div>
+                                <div class="table-row d-flex align-items-center p-3 border-bottom ps-5-5">
+                                    <div class="w-40 d-flex align-items-center"><i class="bi bi-file-earmark-text-fill me-2 fs-5 text-muted"></i>Dokumentasi Analisis Data</div>
+                                    <div class="w-20 text-muted">Teks</div>
                                     <div class="w-20 text-muted">27.02.2024</div>
                                     <div class="w-20 text-center text-muted"><i class="bi bi-three-dots"></i></div>
                                 </div>
-                                <div class="table-row d-flex align-items-center p-2 border-bottom ps-5">
-                                    <div class="w-35 d-flex align-items-center"><i class="bi bi-file-earmark-text-fill me-2 fs-5 text-muted"></i> Proyek Baid</div>
-                                    <div class="w-25 text-muted">Documentation</div>
+                                <div class="table-row d-flex align-items-center p-3 border-bottom ps-5-5">
+                                    <div class="w-40 d-flex align-items-center"><i class="bi bi-file-earmark-text-fill me-2 fs-5 text-muted"></i>Dokumentasi Proyek Baid</div>
+                                    <div class="w-20 text-muted">Teks</div>
                                     <div class="w-20 text-muted">26.05.2023</div>
                                     <div class="w-20 text-center text-muted"><i class="bi bi-three-dots"></i></div>
                                 </div>
-                                <div class="table-row d-flex align-items-center p-2 border-bottom ps-4">
-                                    <div class="w-35 d-flex align-items-center"><i class="bi bi-folder-fill me-2 fs-5 text-brand"></i> Relam Mental Data</div>
-                                    <div class="w-25 text-muted">Data Ahli</div>
+                                <div class="table-row d-flex align-items-center p-3 border-bottom ps-4-5">
+                                    <div class="w-40 d-flex align-items-center"><i class="bi bi-folder-fill me-2 fs-5 text-brand"></i>Relam Mental Data</div>
+                                    <div class="w-20 text-muted">Folder Data</div>
                                     <div class="w-20 text-muted">13.06.2023</div>
                                     <div class="w-20 text-center text-muted"><i class="bi bi-three-dots"></i></div>
                                 </div>
@@ -128,10 +134,19 @@
                         </div>
                     </section>
 
-                    <!-- Add placeholders for other sections if needed -->
-                    <section id="proyek" class="content-section py-4" style="height: 600px;"></section>
-                    <section id="laporan" class="content-section py-4" style="height: 600px;"></section>
-                    <section id="pengaturan" class="content-section py-4" style="height: 600px;"></section>
+                    <!-- Placeholders for other sections -->
+                    <section id="proyek" class="content-section py-4" style="min-height: 400px;">
+                        <h2 class="h3 fw-bold">Daftar Proyek</h2>
+                        <p class="text-muted">Konten proyek Anda akan muncul di sini.</p>
+                    </section>
+                    <section id="laporan" class="content-section py-4" style="min-height: 400px;">
+                        <h2 class="h3 fw-bold">Daftar Laporan</h2>
+                        <p class="text-muted">Konten laporan Anda akan muncul di sini.</p>
+                    </section>
+                    <section id="pengaturan" class="content-section py-4" style="min-height: 400px;">
+                        <h2 class="h3 fw-bold">Pengaturan Aplikasi</h2>
+                        <p class="text-muted">Konfigurasi akun dan aplikasi di sini.</p>
+                    </section>
 
                 </div>
             </main>
@@ -150,10 +165,10 @@
                 <button class="btn btn-red-filled btn-large-center" type="button" title="Buat Baru">
                     <i class="bi bi-plus fs-2 text-white"></i>
                 </button>
-                <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#favorites">
+                <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#Favorites">
                     <i class="bi bi-heart bottom-nav-icon"></i>Favorit
                 </a>
-                <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#profil">
+                <a class="nav-link bottom-nav-link text-center flex-column p-0" href="#Profil">
                     <i class="bi bi-person bottom-nav-icon"></i>Profil
                 </a>
             </div>
